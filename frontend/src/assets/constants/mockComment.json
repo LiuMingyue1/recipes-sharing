@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "recipeId": 1,
+      "userId": 101,
+      "comment": "This pizza is absolutely amazing! Perfect crust and flavor.",
+      "date": "2024-11-10"
+    },
+    {
+      "id": 2,
+      "recipeId": 1,
+      "userId": 102,
+      "comment": "Tried this with gluten-free flour, and it worked well!",
+      "date": "2024-11-11"
+    },
+    {
+      "id": 3,
+      "recipeId": 2,
+      "userId": 103,
+      "comment": "The lava cake turned out perfect! Gooey center was amazing.",
+      "date": "2024-11-09"
+    },
+    {
+      "id": 4,
+      "recipeId": 3,
+      "userId": 101,
+      "comment": "A very refreshing salad, perfect for summer.",
+      "date": "2024-11-08"
+    },
+    {
+      "id": 5,
+      "recipeId": 4,
+      "userId": 104,
+      "comment": "Classic Carbonara! My family loved it.",
+      "date": "2024-11-07"
+    }
+  ]
+  

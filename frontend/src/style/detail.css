@@ -1,0 +1,254 @@
+.detail-container {
+    background-color: #FFF8DC;
+    height: 100vh; /* 页面高度固定为视口高度 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recipe-detail {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 60px); /* 留出 Navbar 的高度 */
+    overflow: hidden; /* 防止整体滚动 */
+  }
+  
+  /* 左侧布局 */
+  .detail-left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%; /* 填满父容器 */
+  }
+  
+  .detail-image-container {
+    height: 82%;;
+    text-align: center;
+  }
+  
+  .detail-image {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .detail-comments {
+    padding: 10px;
+    overflow-y: auto; /* 评论区域可滚动 */
+  }
+  
+  .comment-item {
+    margin-bottom: 15px;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #333300; /* 右侧文字颜色 */
+  }
+  
+  .comment-username {
+    font-size: 14px;
+  }
+  
+  .comment-date {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .comment-content {
+    background-color: #fff; /* 仅为评论内容部分设置背景 */
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: #333300; /* 右侧文字颜色 */
+  }
+  
+  /* 右侧布局 */
+  .detail-right {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  
+  .detail-header-fixed {
+    position: sticky; /* 固定在滚动容器顶部 */
+    top: 0; /* 距顶部为 0 */
+    background-color: #FFF8DC; /* 与背景色一致 */
+    z-index: 10; /* 确保在滚动内容上方 */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* 添加分割线 */
+  }
+  
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-header h1 {
+    font-size: 49px; /* 菜名字体大小 */
+    color: #333300; /* 菜名颜色 */
+    margin-bottom: 10px;
+    margin-left: -5px;
+  }
+  
+  .detail-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .author-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 距离作者名20px */
+  }
+  
+  .author-section p {
+    color: #333300; /* 作者名颜色 */
+  }
+  
+  /* 可滚动区域 */
+  .detail-scrollable {
+    flex: 1; /* 占用右侧剩余空间 */
+    overflow-y: auto; /* 启用滚动 */
+    padding-right: 10px; /* 为滚动条预留空间 */
+  }
+  
+  .detail-scrollable hr:first-of-type {
+    display: none; /* 隐藏滚动区域中的第一条分割线 */
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .section-title {
+    margin-top: 10px;
+    color: #333300; /* 标题颜色 */
+    font-weight: bold; /* 加粗 */
+    font-size: 18px; /* 字体大小 */
+    margin-bottom: 10px; /* 调整下方间距 */
+  }  
+  
+  ul, ol {
+    margin-left: 20px;
+    color: #333300; /* 列表文字颜色 */
+  }
+  
+  ul li, ol li {
+    margin-bottom: 10px;
+  }
+  
+  /* 自定义滚动条样式（Webkit浏览器） */
+  .detail-right::-webkit-scrollbar,
+  .detail-comments::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .detail-right::-webkit-scrollbar-thumb,
+  .detail-comments::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .detail-right::-webkit-scrollbar-track,
+  .detail-comments::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .comment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .comment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    width: 400px;
+    animation: fadeIn 0.3s ease-in-out; /* 添加轻微的动画效果 */
+  }
+  
+  .modal-content textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-actions button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal-actions button:first-child {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .modal-actions button:first-child:hover {
+    background: #0056b3;
+  }
+  
+  .modal-actions button:last-child {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .modal-actions button:last-child:hover {
+    background: #e2e6ea;
+  }
+  
+  

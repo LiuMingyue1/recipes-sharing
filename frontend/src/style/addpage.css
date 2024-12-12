@@ -1,0 +1,169 @@
+.add-page {
+  background-color: #FFF8DC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 垂直对齐顶部 */
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  overflow: hidden; /* 防止多余滚动 */
+}
+
+.add-page .add-content {
+  display: flex;
+  justify-content: space-between; 
+  gap: 2rem; /* 增加左右边距 */
+  margin: 1.25rem; /* 保持整体的 margin */
+  width: 100%;
+  max-width: 100rem; /* 最大宽度仍为 1600px */
+}
+
+.add-page h2 {
+  text-align: center;
+  color: #333;
+}
+
+.add-page .form-group {
+  margin-bottom: 0.9375rem; /* margin-bottom: 15px */
+  margin: 0 auto;
+}
+
+.add-page .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3125rem; /* margin-bottom: 5px */
+}
+
+.add-page .form-group button {
+  background-color: #E0E8A3;
+  border-radius: 0.625rem; /* border-radius: 10px */
+  margin-right: 2.5rem; /* margin-right: 40px */
+  margin-bottom: 0.625rem; /* margin-bottom: 10px */
+  height: 2.25rem; /* height: 36px */
+  width: 12.5rem; /* width: 200px */
+  align-items: center;
+  justify-content: center;
+}
+
+.add-page .selected-button {
+  color: rgb(0, 0, 0); 
+  border: 0.125rem solid #575B33; /* border: 2px */
+  font-weight: bold;
+  transform: scale(1.2); 
+  transition: all 0.3s ease; 
+}
+
+.add-page .form-group input,
+.add-page .form-group textarea {
+  width: 69.75rem; /* width: 1116px */
+  height: 3.125rem; /* height: 50px */
+  padding: 0.625rem; /* padding: 10px */
+  background-color: transparent;
+  border: 0.0625rem solid #000000; /* border: 1px */
+  border-radius: 0.25rem; /* border-radius: 4px */
+  font-size: 1rem; /* font-size: 16px */
+  margin-bottom: 1.25rem; /* margin-bottom: 20px */
+}
+
+.add-page .form-group textarea {
+  resize: vertical;
+  height: 15.625rem; /* height: 250px */
+}
+
+.add-page .add-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem; /* 缩小图片框宽度 (原 700px -> 30rem = 480px) */
+  height: 22.5rem; 
+  border: 0.125rem dashed #000000; /* 边框样式保持一致 */
+  border-radius: 0.625rem; /* 圆角保持一致 */
+  cursor: pointer;
+  background-color: transparent;
+  margin: 1.25rem; /* 保持外边距 */
+}
+
+.add-page .image-preview img {
+  max-width: 100%; /* 确保图片不会超出框的宽度 */
+  max-height: 100%; /* 确保图片不会超出框的高度 */
+  object-fit: contain; /* 保持图片比例适应容器 */
+}
+
+.add-page .add-pic:hover {
+  border-color: #575B33; /* change color */
+}
+
+.add-page .add-button {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 5.75rem; /* width: 92px */
+  height: 2.25rem; /* height: 36px */
+  padding: 0.625rem; /* padding: 10px */
+  background-color: #E0E8A3;
+  color: #000000;
+  border: 0.125rem solid transparent; /* border: 2px */
+  border-radius: 0.625rem; /* border-radius: 10px */
+  font-size: 0.9375rem; /* font-size: 15px */
+  cursor: pointer;
+}
+
+.add-page .add-button:hover {
+  border: 0.125rem solid #000000; /* border: 2px */
+}
+
+.add-page .recipe-table {
+  margin-top: 1.25rem; /* 上方间距保持一致 */
+  border-radius: 1.25rem; /* 保持圆角样式 */
+  background-color: #F9F3BC;
+  width: 62.5rem; /* 原料框的宽度保持一致 */
+  height: 22.5rem; /* 高度保持一致 */
+  overflow-x: scroll; /* 水平滚动 */
+  overflow-y: scroll; /* 垂直滚动 */
+}
+
+.add-page .recipe-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.add-page .recipe-table th,
+.add-page .recipe-table td {
+  width: 1.25rem; /* width: 20px */
+  padding: 0.3125rem; /* padding: 5px */
+  text-align: center;
+}
+
+.add-page .recipe-table td input {
+  background-color: transparent; 
+  border: 0.0625rem solid #000; /* border: 1px */
+  padding: 0.3125rem; /* padding: 5px */
+  color: #000; 
+}
+
+.add-page .add-ingredient-button {
+  margin-top: 1.25rem; /* margin-top: 20px */
+  padding: 0.625rem 1.25rem; /* padding: 10px 20px */
+  background-color: #E0E8A3;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3125rem; /* border-radius: 5px */
+  height: 2.5rem; /* height: 40px */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-page .add-ingredient-button:hover {
+  background-color: #ced78b;
+}
+
+.add-page .image-preview img {
+  max-width: 25rem; /* max-width: 400px */
+  height: 21.875rem; /* height: 350px */
+  margin-top: 0.625rem; /* margin-top: 10px */
+  border: 0.0625rem solid #ddd; /* border: 1px */
+  border-radius: 0.25rem; /* border-radius: 4px */
+}

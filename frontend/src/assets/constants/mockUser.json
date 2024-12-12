@@ -1,0 +1,43 @@
+[
+    {
+      "id": 101,
+      "name": "Alice Johnson",
+      "avatar": "src/assets/avatar.svg",
+      "age": 28,
+      "gender": "Female",
+      "email": "alice.johnson@example.com",
+      "publishedRecipes": [1, 3],
+      "likedRecipes": [2, 4]
+    },
+    {
+      "id": 102,
+      "name": "Bob Smith",
+      "avatar": "src/assets/avatar.svg",
+      "age": 34,
+      "gender": "Male",
+      "email": "bob.smith@example.com",
+      "publishedRecipes": [],
+      "likedRecipes": [1, 3]
+    },
+    {
+      "id": 103,
+      "name": "Charlie Brown",
+      "avatar": "src/assets/avatar.svg",
+      "age": 25,
+      "gender": "Male",
+      "email": "charlie.brown@example.com",
+      "publishedRecipes": [2],
+      "likedRecipes": [1]
+    },
+    {
+      "id": 104,
+      "name": "Diana Lee",
+      "avatar": "src/assets/avatar.svg",
+      "age": 30,
+      "gender": "Female",
+      "email": "diana.lee@example.com",
+      "publishedRecipes": [4],
+      "likedRecipes": [2]
+    }
+  ]
+  

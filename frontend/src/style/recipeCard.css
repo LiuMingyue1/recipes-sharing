@@ -1,0 +1,36 @@
+.recipe-card {
+  width: 360px;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.recipe-image-link {
+  display: block; /* 确保链接包裹整个图片 */
+}
+
+.recipe-image {
+  width: 360px;
+  height: 513px;
+  object-fit: cover;
+  border: none;
+}
+
+.recipe-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #042306;
+  cursor: pointer;
+}
+
+.recipe-author {
+  font-size: 14px;
+  color: #042306;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease; /* 新动态效果 */
+}
+
+.recipe-author:hover {
+  color: #005f73; /* 悬浮时作者变色 */
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=League+Script&display=swap');
+
+/* Navbar 样式 */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #575B33;
+  padding: 0 20px;
+}
+
+/* 当页面不是主页时的样式调整 */
+.navbar.no-search .navbar-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 搜索框容器 */
+.navbar-search {
+  flex: 1;
+  position: relative;
+}
+
+/* 搜索框输入框 */
+.search-input {
+  width: 70%;
+  height: 38px;
+  border-radius: 80px;
+  padding: 5px 50px 5px 15px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 14px;
+  color: #9A9A9A;
+}
+
+/* 搜索框图标 */
+.search-icon {
+  position: absolute;
+  right: 120px; /* 图标距离输入框右侧的距离 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Navbar 中间 LOGO */
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-logo-button {
+  font-size: 40px;
+  font-family: 'League Script', cursive;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 右侧图标容器 */
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* 右侧图标 */
+.navbar-icon {
+  height: 30px;
+  cursor: pointer;
+}
+
+/* 搜索框在非主页隐藏 */
+.navbar.no-search .navbar-search {
+  display: none;
+}

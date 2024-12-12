@@ -1,0 +1,118 @@
+.profile-container-custom {
+    background-color: #FFF8DC;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .profile-card-custom {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: #333300;
+  }
+  
+  .profile-avatar-custom {
+    width: 100px; 
+    height: 100px;
+    border-radius: 30%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .profile-name-custom {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .profile-info-group-custom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 16px;
+  }
+  
+  .profile-info-item-custom {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .profile-info-item-custom span {
+    font-weight: bold;
+  }
+  
+  .button-wrapper {
+    position: absolute; /* 使按钮定位到框体的绝对位置 */
+    right: 108px; /* 让按钮靠近框体的右边 */
+    z-index: 1; /* 确保按钮在最上层 */
+  }
+  
+  .button-group-custom {
+    display: flex;
+    gap: 5px; /* 按钮之间的最小间距 */
+  }
+  
+  .toggle-button-custom {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #333300;
+    background-color: #F5E6CC; /* 默认背景色 */
+    border: none;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .toggle-button-custom.active {
+    font-weight: bold;
+    background-color: #FFDEAD; /* 选中按钮的背景色 */
+  }
+  
+  .profile-recipe-section {
+    background-color: #FFDEAD;
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  .profile-recipe-list-custom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 600px;
+    padding-right: 10px;
+  }
+  
+  
+  .profile-recipe-list-custom  .recipe-card {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33.33% - 20px); /* 一行三个卡片 */
+    box-sizing: border-box;
+  }
+  
+  .profile-recipe-list-custom  .recipe-card img {
+    width: 100%; /* 图片自动缩放 */
+    /* height: auto; */
+    border-radius: 5px;
+  }
+  
+  .profile-recipe-list-custom .recipe-card h3 {
+    text-align: center;
+
+    color: #333300;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  

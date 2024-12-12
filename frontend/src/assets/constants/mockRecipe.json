@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "userId": 101,  
+    "name": "Classic Margherita Pizza",
+    "author": "Alice Johnson",
+    "image": "src/assets/dish1.png",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1/2 cup warm water",
+      "1 tbsp olive oil",
+      "1 tsp salt",
+      "1 tsp sugar",
+      "1 tsp yeast",
+      "1/2 cup tomato sauce",
+      "200g fresh mozzarella",
+      "Fresh basil leaves"
+    ],
+    "steps": [
+      "In a large bowl, combine flour, salt, sugar, and yeast.",
+      "Gradually add warm water and olive oil. Mix until a dough forms.",
+      "Knead the dough on a floured surface for 10 minutes.",
+      "Let the dough rise for 1 hour in a warm place.",
+      "Preheat the oven to 220°C (430°F).",
+      "Roll out the dough and place it on a pizza pan.",
+      "Spread tomato sauce over the dough.",
+      "Top with mozzarella and fresh basil.",
+      "Bake for 15 minutes or until crust is golden and cheese is bubbly."
+    ]
+  },
+  {
+    "id": 2,
+    "userId": 103, 
+    "name": "Chocolate Lava Cake",
+    "author": "Charlie Brown",
+    "image": "src/assets/dish2.png",
+    "ingredients": [
+      "100g dark chocolate",
+      "100g unsalted butter",
+      "2 large eggs",
+      "2 egg yolks",
+      "1/4 cup sugar",
+      "2 tbsp all-purpose flour",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (390°F).",
+      "Grease 4 ramekins and set aside.",
+      "Melt the chocolate and butter together in a double boiler.",
+      "In a separate bowl, whisk eggs, yolks, and sugar until thick.",
+      "Fold the melted chocolate into the egg mixture.",
+      "Sift in the flour and add vanilla extract and salt.",
+      "Divide the batter among the ramekins.",
+      "Bake for 12 minutes until the edges are set but the center is gooey.",
+      "Serve immediately with a dusting of powdered sugar."
+    ]
+  },
+  {
+    "id": 3,
+    "userId": 101, 
+    "name": "Fresh Summer Salad",
+    "author": "Alice Johnson",
+    "image": "src/assets/dish3.png",
+    "ingredients": [
+      "1 cup mixed greens",
+      "1/2 cup cherry tomatoes, halved",
+      "1/4 cup sliced cucumbers",
+      "1/4 cup red onions, thinly sliced",
+      "1/4 cup feta cheese, crumbled",
+      "2 tbsp olive oil",
+      "1 tbsp balsamic vinegar",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "In a large bowl, combine mixed greens, tomatoes, cucumbers, and red onions.",
+      "Crumble feta cheese over the top.",
+      "Drizzle with olive oil and balsamic vinegar.",
+      "Toss everything gently to combine.",
+      "Season with salt and pepper to taste.",
+      "Serve immediately as a refreshing side or light main dish."
+    ]
+  },
+  {
+    "id": 4,
+    "userId": 104, 
+    "name": "Spaghetti Carbonara",
+    "author": "Diana Lee",
+    "image": "src/assets/dish4.png",
+    "ingredients": [
+      "1 cup mixed greens",
+      "1/2 cup cherry tomatoes, halved",
+      "1/4 cup sliced cucumbers",
+      "1/4 cup red onions, thinly sliced",
+      "1/4 cup feta cheese, crumbled",
+      "2 tbsp olive oil",
+      "1 tbsp balsamic vinegar",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "In a large bowl, combine mixed greens, tomatoes, cucumbers, and red onions.",
+      "Crumble feta cheese over the top.",
+      "Drizzle with olive oil and balsamic vinegar.",
+      "Toss everything gently to combine.",
+      "Season with salt and pepper to taste.",
+      "Serve immediately as a refreshing side or light main dish."
+    ]
+  }
+]
